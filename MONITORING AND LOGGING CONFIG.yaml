@@ -1,0 +1,14 @@
+# Stackdriver alerts configuration
+
+alerts:
+  - name: "HighStockPriceAlert"
+    description: "Alert on high stock prices"
+    conditions:
+      - metric: "custom.googleapis.com/stock_price"
+        filter: "resource.type = \"global\""
+        comparisonType: "COMPARISON_TYPE_GT"
+        thresholdValue: 1000
+    notifications:
+      - type: "email"
+        labels:
+          email_address: "admin@example.com"

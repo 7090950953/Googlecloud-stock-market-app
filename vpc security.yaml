@@ -1,0 +1,5 @@
+# VPC Service Controls configuration
+
+services:
+  - "cloud.googleapis.com"
+  - "compute.googleapis.com"

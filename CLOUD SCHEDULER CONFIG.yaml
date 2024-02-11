@@ -1,0 +1,4 @@
+# Cloud Scheduler configuration
+
+schedule: "*/5 * * * *"
+target: stock-market-app

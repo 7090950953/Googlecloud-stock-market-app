@@ -1,0 +1,6 @@
+# Identity-Aware Proxy (IAP) configuration
+
+iap:
+  enabled: true
+  oauth_client_id: "YOUR_OAUTH_CLIENT_ID"
+  oauth_client_secret: "YOUR_OAUTH_CLIENT_SECRET"
